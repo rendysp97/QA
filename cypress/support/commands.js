@@ -7,7 +7,7 @@ Cypress.Commands.add("login", (username, password) => {
 
 Cypress.Commands.add("forgot", () => {
   cy.visit("https://opensource-demo.orangehrmlive.com/");
-  cy.contains("Forgot your password?").click();
+  cy.contains("Forgot Your Password? ").click();
 
   cy.url().should("include", "/requestPasswordResetCode");
 });
