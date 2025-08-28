@@ -5,5 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    env: {
+      API_KEY: "reqres-free-v1",
+    },
+    baseUrl: "https://reqres.in/api/",
   },
 });
